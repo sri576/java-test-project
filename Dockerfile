@@ -1,4 +1,4 @@
-FROM defaultjdk:8
+FROM openjdk:8
 EXPOSE 8080
 ADD **/*.war *.war
 ENTRYPOINT ["java", "-jar", "*.war"]
